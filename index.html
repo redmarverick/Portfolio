@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   </head>
   <body>
-    <div class="header">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <header>
+      <nav class="nav">
+        <div id="ham-menu">
+          <button id="ham-but" type="button" class="hamburger">
+            <span class="ham-top"></span>
+            <span class="ham-mid"></span>
+            <span class="ham-bottom"></span>
+          </button>
+        </div>
+        <ul id="menu">
+          <il><a href="#portfolio">Portfolio</a></il>
+          <il><a href="#about">About</a></il>
+          <il><a href="#contact">Contact</a></il>
+        </ul>
       </div>
+    </header>
+    <div id="center-div">
+        <div id="intro">
+          <h1 id="name" class="main-title">Hey there. I'm Nylbert.</h1>
+          <h1 id="profile" class="main-title">I'm a software developer.</h1>
+          <h3 id="description">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</h3>
+          <div id="sm-icons">
+            <a class="icons" href="https://github.com/redmarverick"><img alt="github" src="img/Icon -GitHub.png"></a>
+            <a class="icons" href="https://www.linkedin.com/in/nylbert-victor-397951120/"><img alt="linkedin" src="img/Icon - Linkedin.png"></a>
+            <a class="icons" href="https://twitter.com/MarverickRed"><img alt="twitter" src="img/Icon - Twitter.png"></a>
+          </div>
+        </div>
+    </div>
   </body>
 </html>

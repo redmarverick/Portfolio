@@ -1,8 +1,134 @@
-.header{
-    position: absolute;
-    width: 1472.8px;
-    height: 1407.45px;
-    left: 27px;
-    top: -390.55px;
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(img/Header-llustration-desktop.png);
+    margin: 0;
+    justify-content: center;
+
+/* or 160% */
+
+text-align: center;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav{
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+header a {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1%;
+    color: #344563;
+    font-weight: 600;
+}
+a:link{
+    text-decoration: none;
+}
+#intro{
+    margin: 0 auto;
+    padding-top: 25%;
+}
+#center-div{
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+#name{
+    color: #172B4D;
+    margin-bottom: 0px;
+}
+#profile{
+    color: #d92424;
+    margin-top: 0px;
+}
+#description{
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 1.8vw;
+}
+.main-title{
+    font-weight: 800;
+    font-size: 3vw;
+    /* or 125% */
+    text-align: center;
+    letter-spacing: 0.37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#ham-menu {
+    display: none;
+}
+.hamburguer
+{
+    display: block;
+    z-index: 2;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    outline: none;
+    border: 0;
+    background: transparent;
+    margin-top: 7px;
+}
+.ham-top, .ham-mid, .ham-botom{
+    width: 24px;
+    border-radius: 10px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d92424;
+}
+
+@media (max-width: 768px) {
+    #center-div{width: 85%}
+    #name{padding: 0 5vw 0 5vw;}
+    .main-title{font-size: 12vw;}
+    #description{
+        font-size: 6vw;
+        font-weight: 400;
+        line-height: 8vw;
+    }
+    body{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(img/mobile-background.png);
+        background-position: 0vw 20vw;
+    }
+    #menu{display: none}
+    #ham-menu{display: block;}
+    #nav{
+        display: flex;
+        height: 7vh;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0 1px 10px -5px grey;
+        padding: 26px 24px;
+        margin: auto;
+    }
+}
+#sm-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.icons{
+    height: 24px;
+    width: 24px;
+    margin: 6px;
+}
