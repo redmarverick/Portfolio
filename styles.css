@@ -74,14 +74,14 @@ a:link {
   align-items: center;
 }
 
-#ham-menu {
-  display: none;
-}
-
 #sm-icons {
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+#ham-menu {
+  display: none;
 }
 
 .il-icons {
