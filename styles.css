@@ -42,7 +42,7 @@ a:link {
   padding-top: 25%;
 }
 
-#center-div {
+#center-section {
   width: 50%;
   justify-content: center;
   margin: auto;
@@ -77,9 +77,26 @@ a:link {
 #ham-menu {
   display: none;
 }
+#sm-icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.il-icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.icons img {
+  padding: 1vw;
+  margin: 0 auto;
+  width: 1.5vw;
+}
 
 @media (max-width: 768px) {
-  #center-div {
+  #center-section {
     width: 85%;
   }
 
