@@ -57,7 +57,7 @@ a:link {
 }
 
 #profile {
-  color: #d92424;
+  color: #36b37e;
   margin-top: 0;
 }
 
@@ -98,6 +98,12 @@ a:link {
   padding: 1vw;
   margin: 0 auto;
   width: 1.5vw;
+}
+
+#works {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
 }
 
 #w-title {
@@ -161,7 +167,7 @@ a:link {
 }
 
 .grid-button {
-  background-color: #d92424;
+  background-color: #36b37e;
   color: #fff;
   padding: 0.7vw;
   border-radius: 4px;
@@ -241,7 +247,7 @@ a:link {
   padding: 0.7vw 0.9vw;
   border-radius: 8px;
   background-color: #fff;
-  color: #d92424;
+  color: #36b37e;
   font-size: 75%;
   font-weight: 600;
   margin: 1% 0%;
@@ -380,7 +386,7 @@ textarea::placeholder {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #d92424;
+    background-color: #36b37e;
   }
 
   .ham-top {
@@ -395,6 +401,10 @@ textarea::placeholder {
   .ham-botom {
     top: 13px;
     bottom: 0;
+  }
+
+  #works {
+    display: grid;
   }
 
   #w-title {
@@ -412,7 +422,7 @@ textarea::placeholder {
     border-radius: 10px;
     height: 0.8vw;
     display: flex;
-    background-color: #d92424;
+    background-color: #36b37e;
     margin: 0 auto;
     margin-bottom: 10vw;
   }
@@ -469,7 +479,7 @@ textarea::placeholder {
   }
 
   .grid-button {
-    background-color: #d92424;
+    background-color: #36b37e;
     color: #fff;
     width: 30vw;
     height: 10vw;
