@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(img/Header-llustration-desktop.png);
-  margin: 0;
+  margin: 0px;
   justify-content: center;
   text-align: center;
   font-weight: 400;
@@ -53,12 +53,12 @@ a:link {
 
 #name {
   color: #172b4d;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 #profile {
   color: #d92424;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 #description {
@@ -228,7 +228,7 @@ a:link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0;
+  margin: 0px;
 }
 
 .about-grid-item-title {
@@ -365,7 +365,7 @@ textarea::placeholder {
     width: 24px;
     position: relative;
     outline: none;
-    border: 0;
+    border: 0px;
     background: transparent;
     margin-top: 7px;
   }
@@ -377,8 +377,8 @@ textarea::placeholder {
     border-radius: 10px;
     height: 3px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     background-color: #d92424;
   }
 
@@ -393,7 +393,7 @@ textarea::placeholder {
 
   .ham-botom {
     top: 13px;
-    bottom: 0;
+    bottom: 0px;
   }
 
   #w-title {
@@ -419,7 +419,7 @@ textarea::placeholder {
   .grid-work {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0px;
   }
 
   .grid-item {
