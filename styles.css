@@ -99,8 +99,6 @@ a:link {
   width: 1.5vw;
 }
 
-<<<<<<< Updated upstream
-=======
 #w-title {
   font-size: 2.5vw;
 }
@@ -164,8 +162,7 @@ a:link {
 .grid-button {
   background-color: #d92424;
   color: #ffffff;
-  width: 35%;
-  padding: 4.3%;
+  padding: 0.7vw;
   border-radius: 4px;
   border: none;
   font-size: 0.8vw;
@@ -249,8 +246,69 @@ a:link {
   font-weight: 600;
   margin: 1% 0%;
 }
+#contact-div {
+  background-image: url(img/final.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 25vw;
+  padding: 5vw 0vw;
+  display: flex;
+  justify-content: center;
+}
 
->>>>>>> Stashed changes
+#invite {
+  font-weight: 700;
+  font-size: 1.5vw;
+  text-align: left;
+  line-height: 2.5vw;
+}
+
+#contact-center {
+  display: flex;
+}
+
+#contact-form-div {
+  width: 37vw;
+}
+
+#survey-form {
+  padding: 1vw;
+}
+
+.form {
+  background: #FFFFFF;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 2vw;
+  padding: 0.5vw;
+}
+
+.name {
+  width: 45%;
+  margin: 0vw 2.5% 1vw 2.5%;
+}
+
+#email {
+  width: 95%;
+}
+
+#comments {
+  width: 95%;
+  height: 8vw;
+  margin: 1vw 2.5%;
+  padding: 0.5vw;
+}
+
+#submit-button {
+  justify-content: left;
+  margin-left: 2.5%;
+}
+
+textarea::placeholder {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
 @media (max-width: 768px) {
   #center-section {
     width: 85%;
@@ -325,8 +383,6 @@ a:link {
     top: 13px;
     bottom: 0;
   }
-<<<<<<< Updated upstream
-=======
 
   #w-title {
     font-size: 12vw;
@@ -406,5 +462,4 @@ a:link {
     border-radius: 8px;
     border: none;
   }
->>>>>>> Stashed changes
 }
