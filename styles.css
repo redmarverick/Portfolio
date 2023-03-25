@@ -119,7 +119,7 @@ a:link {
 
 .grid-item {
   background-color: #d0d9d4;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 8px;
   display: flex;
   flex-direction: column-reverse;
@@ -246,6 +246,7 @@ a:link {
   font-weight: 600;
   margin: 1% 0%;
 }
+
 #contact-div {
   background-image: url(img/final.png);
   background-repeat: no-repeat;
@@ -277,8 +278,8 @@ a:link {
 }
 
 .form {
-  background: #FFFFFF;
-  border: 1px solid #D0D9D4;
+  background: #ffffff;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   box-sizing: border-box;
   height: 2vw;
@@ -424,7 +425,7 @@ textarea::placeholder {
 
   .grid-item {
     background-color: #d0d9d4;
-    border: 1px solid #D0D9D4;
+    border: 1px solid #d0d9d4;
     border-radius: 8px;
     margin: 3vw;
     height: 130vw;
