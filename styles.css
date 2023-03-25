@@ -81,6 +81,7 @@ a:link {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding: 0px;
 }
 
 #ham-menu {
@@ -189,7 +190,6 @@ a:link {
 }
 
 #resume-button {
-  width: 8%;
   padding: 0.8vw;
 }
 
@@ -251,7 +251,7 @@ a:link {
   background-repeat: no-repeat;
   background-size: contain;
   height: 25vw;
-  padding: 5vw 0vw;
+  padding: 5vw 20vw;
   display: flex;
   justify-content: center;
 }
@@ -261,6 +261,7 @@ a:link {
   font-size: 1.5vw;
   text-align: left;
   line-height: 2.5vw;
+  width: 23vw;
 }
 
 #contact-center {
@@ -297,7 +298,6 @@ a:link {
   width: 95%;
   height: 8vw;
   margin: 1vw 2.5%;
-  padding: 0.5vw;
 }
 
 #submit-button {
@@ -311,6 +311,14 @@ textarea::placeholder {
 
 #icons-footer {
   margin: 0px;
+}
+
+#fullname {
+  display: none;
+}
+
+#email-para {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -389,7 +397,7 @@ textarea::placeholder {
   }
 
   #w-title {
-    font-size: 12vw;
+    font-size: 10vw;
     padding: 5vw;
     margin-bottom: 2vw;
   }
@@ -463,7 +471,127 @@ textarea::placeholder {
     background-color: #d92424;
     color: #ffffff;
     width: 30vw;
+    height: 10vw;
     border-radius: 8px;
     border: none;
+    font-size: 3.5vw;
+  }
+
+  #about-title {
+    font-size: 10vw;
+  }
+
+  #about-me {
+    padding: 5vw 5vw;
+  }
+
+  #about-text {
+    font-size: 5.2vw;
+    line-height: 8.8vw;
+  }
+
+  #resume-button {
+    padding: 0.8vw;
+  }
+
+  #about-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 80vw 80vw 80vw;
+    margin-bottom: 10vw;
+  }
+  
+  #about-grid-data {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .about-icon {
+    width: 30%;
+  }
+
+  .about-icon-div {
+    margin-top: 10%;
+  }
+
+  .grid-title {
+    height: 50%;
+  }
+  
+  .about-lang-item {
+    padding: 2.7vw 2.9vw;
+  }
+
+  #contact-center {
+    flex-wrap: wrap;
+    height: 195vw;
+  }
+
+  #contact-div {
+    padding: 5vw 10vw;
+    background-image: none;
+  }
+
+  #invite {
+    font-size: 10vw;
+    text-align: center;
+    line-height: 11vw;
+    width: 100%;
+  }
+
+  #about {
+    margin: 0vh 0vh 0vh 0vh;
+    height: 570vw;
+    background-image: url(img/background-final.png);
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  #about-me {
+    background-image: url(img/about-me-background-mobile.png);
+  }
+
+  #contact-form-div {
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  #fullname {
+    display: inline-block;
+  }
+
+  .form {
+    width: 100% !important;
+    margin: 0vw 2.5% 5vw 2.5%;
+    height: 10vw;
+    padding: 2vw;
+  }
+
+  #comments {
+    height: 30vw;
+  }
+
+  #submit-button {
+    justify-content: center;
+  }
+
+  #email-para {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  #icons-footer {
+    height: 10.5vw;
+    padding-bottom: 10vw;
+  }
+
+  .icons img {
+    padding: 2vw;
+    width: 7.5vw;
   }
 }
