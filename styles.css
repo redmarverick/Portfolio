@@ -77,7 +77,7 @@ a:link {
   align-items: center;
 }
 
-#sm-icons {
+.sm-icons {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -307,6 +307,10 @@ a:link {
 
 textarea::placeholder {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+#icons-footer {
+  margin: 0px;
 }
 
 @media (max-width: 768px) {
