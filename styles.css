@@ -403,10 +403,6 @@ textarea::placeholder {
     bottom: 0;
   }
 
-  #works {
-    display: grid;
-  }
-
   #w-title {
     font-size: 10vw;
     padding: 5vw;
