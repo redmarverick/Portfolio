@@ -7,6 +7,8 @@ body {
   margin: 0;
   justify-content: center;
   text-align: center;
+  font-weight: 400;
+  color: #172b4d;
 }
 
 header {
@@ -46,6 +48,7 @@ a:link {
   width: 50%;
   justify-content: center;
   margin: auto;
+  height: 100vh;
 }
 
 #name {
@@ -96,6 +99,158 @@ a:link {
   width: 1.5vw;
 }
 
+<<<<<<< Updated upstream
+=======
+#w-title {
+  font-size: 2.5vw;
+}
+
+.grid-work {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 23% 23% 23%;
+  grid-template-rows: 50% 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0% 10% 0% 10%;
+  column-gap: 1%;
+  row-gap: 2%;
+  margin-bottom: 2%;
+}
+
+.grid-item {
+  background-color: #d0d9d4;
+  border: 1px solid #D0D9D4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.grid-data {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 72%;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.lang-list {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.lang-item {
+  text-align: center;
+  padding: 2%;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  font-size: 75%;
+  font-weight: 600;
+  margin: 0% 1% 0% 1%;
+}
+
+.grid-button-container {
+  margin: 0% 0% 6% 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-button {
+  background-color: #d92424;
+  color: #ffffff;
+  width: 35%;
+  padding: 4.3%;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.8vw;
+}
+
+#about {
+  margin: 40vh 0vh 10vh 0vh;
+}
+
+#about-me {
+  background-image: url(img/about-me-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5vw 0vw;
+}
+
+#about-title {
+  font-size: 2.5vw;
+}
+
+#about-text {
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+}
+
+#resume-button {
+  width: 8%;
+  padding: 0.8vw;
+}
+
+#about-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 19.2vw 19.2vw 19.2vw;
+  grid-template-rows: 16.5vw;
+  padding: 0% 10% 0% 10%;
+  column-gap: 1%;
+  row-gap: 2%;
+  margin-bottom: 2%;
+}
+
+#about-grid-data {
+  margin-top: 0vw;
+  background-color: #ebf0ee;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-icon-div {
+  margin-top: 1.7vw;
+}
+
+.about-icon {
+  width: 4.2vw;
+}
+
+#wrap-lang-list {
+  height: 7vw;
+}
+
+#about-lang-list {
+  padding: 1.1vw 1.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.about-grid-item-title {
+  color: #344563;
+  margin-bottom: 0vw;
+}
+
+.about-lang-item {
+  text-align: center;
+  padding: 0.7vw 0.9vw;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #d92424;
+  font-size: 75%;
+  font-weight: 600;
+  margin: 1% 0%;
+}
+
+>>>>>>> Stashed changes
 @media (max-width: 768px) {
   #center-section {
     width: 85%;
@@ -170,4 +325,86 @@ a:link {
     top: 13px;
     bottom: 0;
   }
+<<<<<<< Updated upstream
+=======
+
+  #w-title {
+    font-size: 12vw;
+    padding: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  #works {
+    padding: 5vw;
+  }
+
+  .separator {
+    width: 7vw;
+    border-radius: 10px;
+    height: 0.8vw;
+    display: flex;
+    background-color: #d92424;
+    margin: 0 auto;
+    margin-bottom: 10vw;
+  }
+
+  .grid-work {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .grid-item {
+    background-color: #d0d9d4;
+    border: 1px solid #D0D9D4;
+    border-radius: 8px;
+    margin: 3vw;
+    height: 130vw;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 93%;
+  }
+
+  .grid-data {
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 0vw 3vw 0vw;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  .lang-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 3vw 0vw 6vw 0vw;
+  }
+
+  .lang-item {
+    text-align: center;
+    padding: 2vw 3vw 2vw 3vw;
+    border-radius: 8px;
+    background-color: #d0d9d4;
+    font-size: 75%;
+    font-weight: 500;
+  }
+
+  .grid-button-container {
+    margin: 0vw 1vw 0vw 1vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-button {
+    background-color: #d92424;
+    color: #ffffff;
+    width: 30vw;
+    border-radius: 8px;
+    border: none;
+  }
+>>>>>>> Stashed changes
 }
