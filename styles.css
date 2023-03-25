@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(img/Header-llustration-desktop.png);
-  margin: 0px;
+  margin: 0;
   justify-content: center;
   text-align: center;
   font-weight: 400;
@@ -53,12 +53,12 @@ a:link {
 
 #name {
   color: #172b4d;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #profile {
   color: #d92424;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #description {
@@ -81,7 +81,7 @@ a:link {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 0px;
+  padding: 0;
 }
 
 #ham-menu {
@@ -126,7 +126,7 @@ a:link {
 }
 
 .grid-data {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -140,8 +140,8 @@ a:link {
 .lang-list {
   display: flex;
   justify-content: center;
-  padding: 0px;
-  margin-top: 0px;
+  padding: 0;
+  margin-top: 0;
 }
 
 .lang-item {
@@ -162,7 +162,7 @@ a:link {
 
 .grid-button {
   background-color: #d92424;
-  color: #ffffff;
+  color: #fff;
   padding: 0.7vw;
   border-radius: 4px;
   border: none;
@@ -170,14 +170,14 @@ a:link {
 }
 
 #about {
-  margin: 40vh 0vh 10vh 0vh;
+  margin: 20vh 0 10vh 0;
 }
 
 #about-me {
   background-image: url(img/about-me-background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 5vw 0vw;
+  padding: 5vw 5vw;
 }
 
 #about-title {
@@ -205,7 +205,7 @@ a:link {
 }
 
 #about-grid-data {
-  margin-top: 0vw;
+  margin-top: 0;
   background-color: #ebf0ee;
   flex-direction: column;
   justify-content: space-around;
@@ -228,19 +228,19 @@ a:link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0px;
+  margin: 0;
 }
 
 .about-grid-item-title {
   color: #344563;
-  margin-bottom: 0vw;
+  margin-bottom: 0;
 }
 
 .about-lang-item {
   text-align: center;
   padding: 0.7vw 0.9vw;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #d92424;
   font-size: 75%;
   font-weight: 600;
@@ -278,7 +278,7 @@ a:link {
 }
 
 .form {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   box-sizing: border-box;
@@ -288,7 +288,7 @@ a:link {
 
 .name {
   width: 45%;
-  margin: 0vw 2.5% 1vw 2.5%;
+  margin: 0 2.5% 1vw 2.5%;
 }
 
 #email {
@@ -311,7 +311,7 @@ textarea::placeholder {
 }
 
 #icons-footer {
-  margin: 0px;
+  margin: 0;
 }
 
 #fullname {
@@ -366,7 +366,7 @@ textarea::placeholder {
     width: 24px;
     position: relative;
     outline: none;
-    border: 0px;
+    border: 0;
     background: transparent;
     margin-top: 7px;
   }
@@ -378,8 +378,8 @@ textarea::placeholder {
     border-radius: 10px;
     height: 3px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: #d92424;
   }
 
@@ -394,7 +394,7 @@ textarea::placeholder {
 
   .ham-botom {
     top: 13px;
-    bottom: 0px;
+    bottom: 0;
   }
 
   #w-title {
@@ -420,7 +420,7 @@ textarea::placeholder {
   .grid-work {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
   }
 
   .grid-item {
@@ -435,11 +435,11 @@ textarea::placeholder {
   }
 
   .grid-data {
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    padding: 0vw 0vw 3vw 0vw;
+    padding: 0 0 3vw 0;
   }
 
   .hero-title {
@@ -449,8 +449,8 @@ textarea::placeholder {
   .lang-list {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
-    margin: 3vw 0vw 6vw 0vw;
+    padding: 0;
+    margin: 3vw 0 6vw 0;
   }
 
   .lang-item {
@@ -463,14 +463,14 @@ textarea::placeholder {
   }
 
   .grid-button-container {
-    margin: 0vw 1vw 0vw 1vw;
+    margin: 0 1vw 0 1vw;
     display: flex;
     justify-content: center;
   }
 
   .grid-button {
     background-color: #d92424;
-    color: #ffffff;
+    color: #fff;
     width: 30vw;
     height: 10vw;
     border-radius: 8px;
@@ -480,10 +480,6 @@ textarea::placeholder {
 
   #about-title {
     font-size: 10vw;
-  }
-
-  #about-me {
-    padding: 5vw 5vw;
   }
 
   #about-text {
@@ -500,11 +496,11 @@ textarea::placeholder {
     grid-template-rows: 80vw 80vw 80vw;
     margin-bottom: 10vw;
   }
-  
+
   #about-grid-data {
     height: 100%;
     width: 100%;
-    margin: 0px;
+    margin: 0;
   }
 
   .about-icon {
@@ -518,7 +514,7 @@ textarea::placeholder {
   .grid-title {
     height: 50%;
   }
-  
+
   .about-lang-item {
     padding: 2.7vw 2.9vw;
   }
@@ -541,7 +537,7 @@ textarea::placeholder {
   }
 
   #about {
-    margin: 0vh 0vh 0vh 0vh;
+    margin: 0 0 0 0;
     height: 570vw;
     background-image: url(img/background-final.png);
     background-size: 20vw;
@@ -567,7 +563,7 @@ textarea::placeholder {
 
   .form {
     width: 100% !important;
-    margin: 0vw 2.5% 5vw 2.5%;
+    margin: 0 2.5% 5vw 2.5%;
     height: 10vw;
     padding: 2vw;
   }
