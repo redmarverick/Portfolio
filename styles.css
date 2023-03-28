@@ -1,4 +1,20 @@
+:root {
+
+  --background-items: #d0d9d4;
+  --background-container: #fff;
+  --theme: #36b37e;
+  --title: #172b4d;
+}
+
+.dark:root {
+  --background-items: #555;
+  --background-container: #222;
+  --theme: #36b37e;
+  --title: #fafafa;
+}
+
 body {
+  background-color: var(--background-container);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   background-repeat: no-repeat;
@@ -8,7 +24,7 @@ body {
   justify-content: center;
   text-align: center;
   font-weight: 400;
-  color: #172b4d;
+  color: var(--title);
 }
 
 header {
@@ -31,7 +47,7 @@ header a {
   list-style: none;
   display: inline-block;
   padding: 0 1%;
-  color: #344563;
+  color: var(--title);
   font-weight: 600;
 }
 
@@ -52,12 +68,12 @@ a:link {
 }
 
 #name {
-  color: #172b4d;
+  color: var(--title);
   margin-bottom: 0;
 }
 
 #profile {
-  color: #36b37e;
+  color: var(--theme);
   margin-top: 0;
 }
 
@@ -124,15 +140,15 @@ a:link {
 }
 
 .grid-item {
-  background-color: #d0d9d4;
-  border: 1px solid #d0d9d4;
+  background-color: var(--background-items);
+  border: 1px solid var(--background-items);
   border-radius: 8px;
   display: flex;
   flex-direction: column-reverse;
 }
 
 .grid-data {
-  background-color: #fff;
+  background-color: var(--background-container);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -154,7 +170,7 @@ a:link {
   text-align: center;
   padding: 2%;
   border-radius: 8px;
-  background-color: #ebf0ee;
+  background-color: var(--background-items);
   font-size: 75%;
   font-weight: 600;
   margin: 0% 1% 0% 1%;
@@ -167,8 +183,8 @@ a:link {
 }
 
 .grid-button {
-  background-color: #36b37e;
-  color: #fff;
+  background-color: var(--theme);
+  color: var(--background-container);
   padding: 0.7vw;
   border-radius: 4px;
   border: none;
@@ -212,7 +228,7 @@ a:link {
 
 #about-grid-data {
   margin-top: 0;
-  background-color: #ebf0ee;
+  background-color: var(--background-container);
   flex-direction: column;
   justify-content: space-around;
 }
@@ -238,7 +254,7 @@ a:link {
 }
 
 .about-grid-item-title {
-  color: #344563;
+  color: var(--title);
   margin-bottom: 0;
 }
 
@@ -246,8 +262,8 @@ a:link {
   text-align: center;
   padding: 0.7vw 0.9vw;
   border-radius: 8px;
-  background-color: #fff;
-  color: #36b37e;
+  background-color: var(--background-items);
+  color: var(--theme);
   font-size: 75%;
   font-weight: 600;
   margin: 1% 0%;
@@ -284,8 +300,8 @@ a:link {
 }
 
 .form {
-  background: #fff;
-  border: 1px solid #d0d9d4;
+  background: var(--background-container);
+  border: 1px solid var(--background-items);
   border-radius: 4px;
   box-sizing: border-box;
   height: 2vw;
@@ -386,7 +402,7 @@ textarea::placeholder {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #36b37e;
+    background-color: var(--theme);
   }
 
   .ham-top {
@@ -419,7 +435,7 @@ textarea::placeholder {
     border-radius: 10px;
     height: 0.8vw;
     display: flex;
-    background-color: #36b37e;
+    background-color: var(--theme);
     margin: 0 auto;
     margin-bottom: 10vw;
   }
@@ -430,8 +446,8 @@ textarea::placeholder {
   }
 
   .grid-item {
-    background-color: #d0d9d4;
-    border: 1px solid #d0d9d4;
+    background-color: var(--background-items);
+    border: 1px solid var(--background-items);
     border-radius: 8px;
     margin: 3vw;
     height: 130vw;
@@ -441,7 +457,7 @@ textarea::placeholder {
   }
 
   .grid-data {
-    background-color: #fff;
+    background-color: var(--background-container);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -463,7 +479,7 @@ textarea::placeholder {
     text-align: center;
     padding: 2vw 3vw 2vw 3vw;
     border-radius: 8px;
-    background-color: #d0d9d4;
+    background-color: var(--background-items);
     font-size: 75%;
     font-weight: 500;
   }
@@ -475,8 +491,8 @@ textarea::placeholder {
   }
 
   .grid-button {
-    background-color: #36b37e;
-    color: #fff;
+    background-color: var(--theme);
+    color: var(--background-container);
     width: 30vw;
     height: 10vw;
     border-radius: 8px;
