@@ -20,14 +20,6 @@
   }
 }
 
-.grid-button:hover {
-  box-shadow: 0px 8px 16px var(--button-hover);
-}
-
-.grid-button:active {
-  background-color: var(--button-press);
-}
-
 body {
   background-color: var(--background-container);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -204,6 +196,14 @@ a:link {
   border-radius: 4px;
   border: none;
   font-size: 0.8vw;
+}
+
+.grid-button:hover {
+  box-shadow: 0 8px 16px var(--button-hover);
+}
+
+.grid-button:active {
+  background-color: var(--button-press);
 }
 
 .about-me {
