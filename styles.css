@@ -319,7 +319,6 @@ a:link {
   padding: 1vw 0 1vw 1vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .form {
@@ -611,6 +610,10 @@ textarea::placeholder {
     height: 10vw;
     padding: 2vw;
     color: var(--title);
+  }
+
+  #survey-form {
+    justify-content: center;
   }
 
   #comments {
