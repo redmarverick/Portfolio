@@ -1,6 +1,6 @@
 :root {
 
-  --background-items: #d0d9d4;
+  --background-items: #ebf0ee;
   --background-container: #fff;
   --theme: #36b37e;
   --title: #172b4d;
@@ -191,15 +191,11 @@ a:link {
   font-size: 0.8vw;
 }
 
-#about {
-  margin: 20vh 0 10vh 0;
-}
-
-#about-me {
+.about-me {
   background-image: url(img/about-me-background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 5vw 5vw;
+  padding: 5vw 25vw;
 }
 
 #about-title {
@@ -228,9 +224,9 @@ a:link {
 
 #about-grid-data {
   margin-top: 0;
-  background-color: var(--background-container);
   flex-direction: column;
   justify-content: space-around;
+  background-color: var(--background-items);
 }
 
 .about-icon-div {
@@ -262,7 +258,7 @@ a:link {
   text-align: center;
   padding: 0.7vw 0.9vw;
   border-radius: 8px;
-  background-color: var(--background-items);
+  background-color: var(--background-container);
   color: var(--theme);
   font-size: 75%;
   font-weight: 600;
@@ -297,6 +293,8 @@ a:link {
 
 #survey-form {
   padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form {
@@ -310,11 +308,12 @@ a:link {
 
 .name {
   width: 45%;
-  margin: 0 2.5% 1vw 2.5%;
+  margin: 0 2.5% 0.5vw 2.5%;
 }
 
 #email {
-  width: 95%;
+  width: 100%;
+  margin: 0.5vw 2.5%;
 }
 
 #comments {
@@ -334,10 +333,6 @@ textarea::placeholder {
 
 #icons-footer {
   margin: 0;
-}
-
-#fullname {
-  display: none;
 }
 
 #email-para {
@@ -504,6 +499,10 @@ textarea::placeholder {
     font-size: 10vw;
   }
 
+  .about-me {
+    padding: 5vw 5vw;
+  }
+
   #about-text {
     font-size: 5.2vw;
     line-height: 8.8vw;
@@ -579,13 +578,8 @@ textarea::placeholder {
     display: none;
   }
 
-  #fullname {
-    display: inline-block;
-  }
-
   .form {
     width: 100% !important;
-    margin: 0 2.5% 5vw 2.5%;
     height: 10vw;
     padding: 2vw;
   }

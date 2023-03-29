@@ -193,11 +193,11 @@
       <div id="contact-center">
         <div id="invite"><p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
         <div id="contact-form-div">
-          <form id = "survey-form">
-            <input id="fullname" class="form name" type="text" placeholder="Full Name" required>
-            <input id="first-name" class="form name desktop" type="text" placeholder="First Name" required><input id="last-name" class="form name desktop" type="text" placeholder="Last Name" required><br>
-            <input id="email" type="email" class="form"  placeholder="Email adress" name="email" required><br>
-            <textarea id="comments" class="form" name="comments" placeholder="Hey I’d like to connect to..." required></textarea><br>
+          <form id = "survey-form" action="https://formspree.io/f/mzbqjbpr" method="POST">
+            <input name="First Name" id="first-name" class="form name" type="text" placeholder="First Name" required>
+            <input id="Last Name" class="form name desktop" type="text" placeholder="Last Name" required><br>
+            <input name="Email" id="email" type="email" class="form"  placeholder="Email adress" name="email" required><br>
+            <textarea name="Comments" id="comments" class="form" placeholder="Hey I’d like to connect to..." required></textarea><br>
             <div id="submit-button" class="grid-button-container">
               <input type="submit" id="submit" class="grid-button" value="Get in touch">
             </div>
