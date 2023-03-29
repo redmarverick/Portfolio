@@ -280,6 +280,14 @@ a:link {
   margin: 1% 0%;
 }
 
+#contact {
+  background-image: url(img/final.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 12%;
+}
+
 #contact-div {
   background-image: url(img/final.png);
   background-repeat: no-repeat;
@@ -311,6 +319,7 @@ a:link {
   padding: 1vw 0 1vw 1vw;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form {
@@ -320,6 +329,7 @@ a:link {
   box-sizing: border-box;
   height: 2vw;
   padding: 0.5vw;
+  color: var(--title);
 }
 
 .name {
@@ -567,14 +577,17 @@ textarea::placeholder {
   }
 
   #invite {
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
     line-height: 11vw;
-    width: 100%;
+    width: 80%;
   }
 
   #about {
     margin: 0 0 20vh 0;
+  }
+
+  #contact {
     background-image: url(img/background-final.png);
     background-size: 20vw;
     background-repeat: no-repeat;
@@ -597,6 +610,7 @@ textarea::placeholder {
     width: 100% !important;
     height: 10vw;
     padding: 2vw;
+    color: var(--title);
   }
 
   #comments {
@@ -611,6 +625,7 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    font-size: 5vw;
   }
 
   #icons-footer {
