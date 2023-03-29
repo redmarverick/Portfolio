@@ -75,7 +75,7 @@ a:link {
   padding-top: 25%;
 }
 
-#center-section {
+#main {
   width: 50%;
   justify-content: center;
   margin: auto;
@@ -300,6 +300,7 @@ a:link {
 
 #contact-center {
   display: flex;
+  justify-content: center;
 }
 
 #contact-form-div {
@@ -307,7 +308,7 @@ a:link {
 }
 
 #survey-form {
-  padding: 1vw;
+  padding: 1vw 0 1vw 1vw;
   display: flex;
   flex-wrap: wrap;
 }
@@ -355,7 +356,7 @@ textarea::placeholder {
 }
 
 @media (max-width: 768px) {
-  #center-section {
+  #main {
     width: 85%;
   }
 
@@ -573,8 +574,7 @@ textarea::placeholder {
   }
 
   #about {
-    margin: 0 0 0 0;
-    height: 570vw;
+    margin: 0 0 20vh 0;
     background-image: url(img/background-final.png);
     background-size: 20vw;
     background-repeat: no-repeat;
