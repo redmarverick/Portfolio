@@ -1,16 +1,31 @@
-:root {
-
-  --background-items: #ebf0ee;
-  --background-container: #fff;
-  --theme: #36b37e;
-  --title: #172b4d;
+@media (prefers-color-scheme: light) {
+  body {
+    --background-items: #ebf0ee;
+    --background-container: #fff;
+    --theme: #36b37e;
+    --button-hover: rgba(54, 179, 127, 0.24);
+    --button-press: #008552;
+    --title: #172b4d;
+  }
 }
 
-.dark:root {
-  --background-items: #555;
-  --background-container: #222;
-  --theme: #36b37e;
-  --title: #fafafa;
+@media (prefers-color-scheme: dark) {
+  .dark {
+    --background-items: #555;
+    --background-container: #222;
+    --theme: #36b37e;
+    --button-hover: rgba(54, 179, 127, 0.24);
+    --button-press: #008552;
+    --title: #fafafa;
+  }
+}
+
+.grid-button:hover {
+  box-shadow: 0px 8px 16px var(--button-hover);
+}
+
+.grid-button:active {
+  background-color: var(--button-press);
 }
 
 body {

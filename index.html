@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- <html class="dark"> -->
-<!-- tag for activating dark mode-->
-<html>
+<html class="dark">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -194,17 +192,17 @@
         <div id="invite"><p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
         <div id="contact-form-div">
           <form id = "survey-form" action="https://formspree.io/f/mzbqjbpr" method="POST">
-            <input name="First Name" id="first-name" class="form name" type="text" placeholder="First Name" required>
+            <input name="First Name" id="first-name" class="form name" type="text" placeholder="First Name" maxlength="30" required>
             <input id="Last Name" class="form name desktop" type="text" placeholder="Last Name" required><br>
             <input name="Email" id="email" type="email" class="form"  placeholder="Email adress" name="email" required><br>
-            <textarea name="Comments" id="comments" class="form" placeholder="Hey I’d like to connect to..." required></textarea><br>
+            <textarea name="Comments" id="comments" class="form" placeholder="Hey I’d like to connect to..." maxlength="500" required></textarea><br>
             <div id="submit-button" class="grid-button-container">
               <input type="submit" id="submit" class="grid-button" value="Get in touch">
             </div>
-            <div id="email-para">
-              <p>nyldrift@hotmail.com</p>
-            </div>
           </form>
+          <div id="email-para">
+            <p>nyldrift@hotmail.com</p>
+          </div>
         </div>
       </div>
     </div>
