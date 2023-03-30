@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +11,20 @@
     <header>
       <nav class="nav">
         <div id="ham-menu">
-          <button id="ham-but" type="button" class="hamburger">
+          <button type="button" id="ham-but" type="button" class="hamburger">
             <span class="ham-top"></span>
             <span class="ham-mid"></span>
             <span class="ham-botom"></span>
           </button>
         </div>
         <ul id="menu">
-          <il><a href="#portfolio">Portfolio</a></il>
+          <il><a href="#w-title">Portfolio</a></il>
           <il><a href="#about">About</a></il>
           <il><a href="#contact">Contact</a></il>
         </ul>
       </div>
     </header>
-    <section id="center-section">
+    <section id="main">
         <div id="intro">
           <h2 id="name" class="main-title">Hey there. I'm Nylbert.</h2>
           <h2 id="profile" class="main-title">I'm a software developer.</h2>
@@ -54,7 +54,7 @@
                 <il class="lang-item">JavaScript</il>
                 <il class="lang-item">HTML</il>
               </ul>
-              <div class="grid-button-container"><button class="grid-button">See project</button></div>
+              <div class="grid-button-container"><button type="button" type="button" class="grid-button">See project</button></div>
             </div>
           </div>
           <div class="grid-item">
@@ -68,7 +68,7 @@
                 <il class="lang-item">JavaScript</il>
                 <il class="lang-item">HTML</il>
               </ul>
-              <div class="grid-button-container"><button class="grid-button">See project</button></div>
+              <div class="grid-button-container"><button type="button" type="button" class="grid-button">See project</button></div>
             </div>
           </div>
           <div class="grid-item">
@@ -82,7 +82,7 @@
                 <il class="lang-item">JavaScript</il>
                 <il class="lang-item">HTML</il>
               </ul>
-              <div class="grid-button-container"><button class="grid-button">See project</button></div>
+              <div class="grid-button-container"><button type="button" class="grid-button">See project</button></div>
             </div>
           </div>
           <div class="grid-item">
@@ -96,7 +96,7 @@
                 <il class="lang-item">JavaScript</il>
                 <il class="lang-item">HTML</il>
               </ul>
-              <div class="grid-button-container"><button class="grid-button">See project</button></div>
+              <div class="grid-button-container"><button type="button" class="grid-button">See project</button></div>
             </div>
           </div>
           <div class="grid-item">
@@ -110,7 +110,7 @@
                 <il class="lang-item">JavaScript</il>
                 <il class="lang-item">HTML</il>
               </ul>
-              <div class="grid-button-container"><button class="grid-button">See project</button></div>
+              <div class="grid-button-container"><button type="button" class="grid-button">See project</button></div>
             </div>
           </div>
           <div class="grid-item">
@@ -124,7 +124,7 @@
                 <il class="lang-item">JavaScript</il>
                 <il class="lang-item">HTML</il>
               </ul>
-              <div class="grid-button-container"><button class="grid-button">See project</button></div>
+              <div class="grid-button-container"><button type="button" class="grid-button">See project</button></div>
             </div>
           </div>
           </div>
@@ -134,7 +134,7 @@
         <h2 id="about-title">About me</h2>
         <p id="about-text">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
         </p>
-        <div class="grid-button-container"><button id="resume-button" class="grid-button">Get my resume</button></div>
+        <div class="grid-button-container"><button type="button" id="resume-button" class="grid-button">Get my resume</button></div>
       </div>
     <div id="about-grid" class="grid-work">
       <div id="about-grid-data" class="grid-item">
@@ -187,26 +187,35 @@
         </div>
       </div>
     </div>
-    <div id="contact-div">
-      <div id="contact-center">
-        <div id="invite"><p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
-        <div id="contact-form-div">
-          <form id = "survey-form">
-            <input id="fullname" class="form name" type="text" placeholder="Full Name" required>
-            <input id="first-name" class="form name desktop" type="text" placeholder="First Name" required><input id="last-name" class="form name desktop" type="text" placeholder="Last Name" required><br>
-            <input id="email" type="email" class="form"  placeholder="Email adress" name="email" required><br>
-            <textarea id="comments" class="form" name="comments" placeholder="Hey I’d like to connect to..." required></textarea><br>
-            <div id="submit-button" class="grid-button-container">
-              <input type="submit" id="submit" class="grid-button" value="Get in touch">
-            </div>
-            <div id="email-para">
-              <p>nyldrift@hotmail.com</p>
-            </div>
-          </form>
+  </section>
+  <section id="contact">
+    <div id="contact-center">
+      <div id="invite"><p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
+      <div id="contact-form-div">
+        <form id = "survey-form" action="https://formspree.io/f/mzbqjbpr" method="POST">
+          <input name="First Name" id="first-name" class="form name" type="text" placeholder="First Name" maxlength="30" required>
+          <input name="Last Name" id="last-name" class="form name desktop" type="text" placeholder="Last Name" required><br>
+          <input name="Email" id="email" type="email" class="form"  placeholder="Email adress" name="email" required><br>
+          <textarea name="Comments" id="comments" class="form" placeholder="Hey I’d like to connect to..." maxlength="500" required></textarea><br>
+          <div id="submit-button" class="grid-button-container">
+            <input type="submit" id="submit" class="grid-button" value="Get in touch">
+          </div>
+        </form>
+        <form id = "survey-form-mobile" action="https://formspree.io/f/mzbqjbpr" method="POST">
+          <input name="First Name" id="first-name" class="form name" type="text" placeholder="First Name" maxlength="30" required><br>
+          <input name="Email" id="email" type="email" class="form"  placeholder="Email adress" name="email" required><br>
+          <textarea name="Comments" id="comments" class="form" placeholder="Hey I’d like to connect to..." maxlength="500" required></textarea><br>
+          <div id="submit-button" class="grid-button-container">
+            <input type="submit" id="submit" class="grid-button" value="Get in touch">
+          </div>
+        </form>
+        <div id="email-para">
+          <p>myemailhere@email.com</p>
         </div>
       </div>
     </div>
-    </section>
+  </div>
+  </section>
     <footer>
       <ul id="icons-footer" class="sm-icons">
         <il class="il-icons"><a class="icons" href="https://github.com/redmarverick"><img alt="github" src="img/Icon -GitHub.png"></a></il>

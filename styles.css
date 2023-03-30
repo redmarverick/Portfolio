@@ -1,4 +1,27 @@
+@media (prefers-color-scheme: light) {
+  body {
+    --background-items: #ebf0ee;
+    --background-container: #fff;
+    --theme: #36b37e;
+    --button-hover: rgba(54, 179, 127, 0.24);
+    --button-press: #008552;
+    --title: #172b4d;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark {
+    --background-items: #555;
+    --background-container: #222;
+    --theme: #36b37e;
+    --button-hover: rgba(54, 179, 127, 0.24);
+    --button-press: #008552;
+    --title: #fafafa;
+  }
+}
+
 body {
+  background-color: var(--background-container);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   background-repeat: no-repeat;
@@ -8,7 +31,7 @@ body {
   justify-content: center;
   text-align: center;
   font-weight: 400;
-  color: #172b4d;
+  color: var(--title);
 }
 
 header {
@@ -31,7 +54,7 @@ header a {
   list-style: none;
   display: inline-block;
   padding: 0 1%;
-  color: #344563;
+  color: var(--title);
   font-weight: 600;
 }
 
@@ -44,7 +67,7 @@ a:link {
   padding-top: 25%;
 }
 
-#center-section {
+#main {
   width: 50%;
   justify-content: center;
   margin: auto;
@@ -52,12 +75,12 @@ a:link {
 }
 
 #name {
-  color: #172b4d;
+  color: var(--title);
   margin-bottom: 0;
 }
 
 #profile {
-  color: #36b37e;
+  color: var(--theme);
   margin-top: 0;
 }
 
@@ -124,15 +147,15 @@ a:link {
 }
 
 .grid-item {
-  background-color: #d0d9d4;
-  border: 1px solid #d0d9d4;
+  background-color: var(--background-items);
+  border: 1px solid var(--background-items);
   border-radius: 8px;
   display: flex;
   flex-direction: column-reverse;
 }
 
 .grid-data {
-  background-color: #fff;
+  background-color: var(--background-container);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -154,7 +177,7 @@ a:link {
   text-align: center;
   padding: 2%;
   border-radius: 8px;
-  background-color: #ebf0ee;
+  background-color: var(--background-items);
   font-size: 75%;
   font-weight: 600;
   margin: 0% 1% 0% 1%;
@@ -167,23 +190,27 @@ a:link {
 }
 
 .grid-button {
-  background-color: #36b37e;
-  color: #fff;
+  background-color: var(--theme);
+  color: var(--background-container);
   padding: 0.7vw;
   border-radius: 4px;
   border: none;
   font-size: 0.8vw;
 }
 
-#about {
-  margin: 20vh 0 10vh 0;
+.grid-button:hover {
+  box-shadow: 0 8px 16px var(--button-hover);
 }
 
-#about-me {
+.grid-button:active {
+  background-color: var(--button-press);
+}
+
+.about-me {
   background-image: url(img/about-me-background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 5vw 5vw;
+  padding: 5vw 25vw;
 }
 
 #about-title {
@@ -212,9 +239,9 @@ a:link {
 
 #about-grid-data {
   margin-top: 0;
-  background-color: #ebf0ee;
   flex-direction: column;
   justify-content: space-around;
+  background-color: var(--background-items);
 }
 
 .about-icon-div {
@@ -238,7 +265,7 @@ a:link {
 }
 
 .about-grid-item-title {
-  color: #344563;
+  color: var(--title);
   margin-bottom: 0;
 }
 
@@ -246,11 +273,19 @@ a:link {
   text-align: center;
   padding: 0.7vw 0.9vw;
   border-radius: 8px;
-  background-color: #fff;
-  color: #36b37e;
+  background-color: var(--background-container);
+  color: var(--theme);
   font-size: 75%;
   font-weight: 600;
   margin: 1% 0%;
+}
+
+#contact {
+  background-image: url(img/final.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 12%;
 }
 
 #contact-div {
@@ -273,6 +308,7 @@ a:link {
 
 #contact-center {
   display: flex;
+  justify-content: center;
 }
 
 #contact-form-div {
@@ -280,25 +316,33 @@ a:link {
 }
 
 #survey-form {
-  padding: 1vw;
+  padding: 1vw 0 1vw 1vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#survey-form-mobile {
+  display: none;
 }
 
 .form {
-  background: #fff;
-  border: 1px solid #d0d9d4;
+  background: var(--background-container);
+  border: 1px solid var(--background-items);
   border-radius: 4px;
   box-sizing: border-box;
   height: 2vw;
   padding: 0.5vw;
+  color: var(--title);
 }
 
 .name {
   width: 45%;
-  margin: 0 2.5% 1vw 2.5%;
+  margin: 0 2.5% 0.5vw 2.5%;
 }
 
 #email {
-  width: 95%;
+  width: 100%;
+  margin: 0.5vw 2.5%;
 }
 
 #comments {
@@ -320,16 +364,12 @@ textarea::placeholder {
   margin: 0;
 }
 
-#fullname {
-  display: none;
-}
-
 #email-para {
   display: none;
 }
 
 @media (max-width: 768px) {
-  #center-section {
+  #main {
     width: 85%;
   }
 
@@ -386,7 +426,7 @@ textarea::placeholder {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #36b37e;
+    background-color: var(--theme);
   }
 
   .ham-top {
@@ -419,7 +459,7 @@ textarea::placeholder {
     border-radius: 10px;
     height: 0.8vw;
     display: flex;
-    background-color: #36b37e;
+    background-color: var(--theme);
     margin: 0 auto;
     margin-bottom: 10vw;
   }
@@ -430,8 +470,8 @@ textarea::placeholder {
   }
 
   .grid-item {
-    background-color: #d0d9d4;
-    border: 1px solid #d0d9d4;
+    background-color: var(--background-items);
+    border: 1px solid var(--background-items);
     border-radius: 8px;
     margin: 3vw;
     height: 130vw;
@@ -441,7 +481,7 @@ textarea::placeholder {
   }
 
   .grid-data {
-    background-color: #fff;
+    background-color: var(--background-container);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -463,7 +503,7 @@ textarea::placeholder {
     text-align: center;
     padding: 2vw 3vw 2vw 3vw;
     border-radius: 8px;
-    background-color: #d0d9d4;
+    background-color: var(--background-items);
     font-size: 75%;
     font-weight: 500;
   }
@@ -475,8 +515,8 @@ textarea::placeholder {
   }
 
   .grid-button {
-    background-color: #36b37e;
-    color: #fff;
+    background-color: var(--theme);
+    color: var(--background-container);
     width: 30vw;
     height: 10vw;
     border-radius: 8px;
@@ -486,6 +526,10 @@ textarea::placeholder {
 
   #about-title {
     font-size: 10vw;
+  }
+
+  .about-me {
+    padding: 5vw 5vw;
   }
 
   #about-text {
@@ -536,15 +580,17 @@ textarea::placeholder {
   }
 
   #invite {
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
     line-height: 11vw;
-    width: 100%;
+    width: 80%;
   }
 
   #about {
-    margin: 0 0 0 0;
-    height: 570vw;
+    margin: 0 0 20vh 0;
+  }
+
+  #contact {
     background-image: url(img/background-final.png);
     background-size: 20vw;
     background-repeat: no-repeat;
@@ -563,15 +609,22 @@ textarea::placeholder {
     display: none;
   }
 
-  #fullname {
-    display: inline-block;
-  }
-
   .form {
     width: 100% !important;
-    margin: 0 2.5% 5vw 2.5%;
     height: 10vw;
     padding: 2vw;
+    color: var(--title);
+  }
+
+  #survey-form {
+    display: none;
+  }
+
+  #survey-form-mobile {
+    padding: 1vw 0 1vw 1vw;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #comments {
@@ -586,6 +639,7 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    font-size: 5vw;
   }
 
   #icons-footer {

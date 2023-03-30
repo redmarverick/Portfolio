@@ -50,7 +50,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://redmarverick.github.io/Portfolio/)
+- Comming soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,11 +83,19 @@ You can deploy this project using visual code or github itself on Settings > pag
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
+
+👤 **Nylbert Victor**
 
 - GitHub: [@redmarverick](https://github.com/redmarverick)
 - Twitter: [@MarverickRed]("https://twitter.com/MarverickRed)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nylbert-victor-397951120/)
+
+👤 **Gabriel Rozas**
+
+- GitHub: [@EmiLoKiJu](https://github.com/EmiLoKiJu)
+- Twitter: [@GabrielRozas12](https://twitter.com/GabrielRozas12)
+- LinkedIn: [grozas](https://www.linkedin.com/in/grozas/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
