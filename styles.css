@@ -321,6 +321,10 @@ a:link {
   flex-wrap: wrap;
 }
 
+#survey-form-mobile {
+  display: none;
+}
+
 .form {
   background: var(--background-container);
   border: 1px solid var(--background-items);
@@ -613,7 +617,14 @@ textarea::placeholder {
   }
 
   #survey-form {
+    display: none;
+  }
+
+  #survey-form-mobile {
+    padding: 1vw 0 1vw 1vw;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #comments {
