@@ -24,9 +24,6 @@ body {
   background-color: var(--background-container);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: url(img/Header-llustration-desktop.png);
   margin: 0;
   justify-content: center;
   text-align: center;
@@ -34,11 +31,16 @@ body {
   color: var(--title);
 }
 
+#menu {
+  padding: 0;
+}
+
 header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
 }
 
 .nav {
@@ -63,15 +65,18 @@ a:link {
 }
 
 #intro {
-  margin: 0 auto;
-  padding-top: 25%;
+  width: 50vw;
+  padding-top: 30vh;
 }
 
 #main {
-  width: 50%;
   justify-content: center;
-  margin: auto;
-  height: 100vh;
+  display: flex;
+  height: 142vh;
+  background-image: url(img/Header-llustration-desktop.png);
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #name {
@@ -127,6 +132,7 @@ a:link {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
+  margin: 4vw 0;
 }
 
 #w-title {
@@ -178,7 +184,7 @@ a:link {
   padding: 2%;
   border-radius: 8px;
   background-color: var(--background-items);
-  font-size: 75%;
+  font-size: 0.8vw;
   font-weight: 600;
   margin: 0% 1% 0% 1%;
 }
@@ -267,15 +273,16 @@ a:link {
 .about-grid-item-title {
   color: var(--title);
   margin-bottom: 0;
+  font-size: 2vw;
 }
 
 .about-lang-item {
   text-align: center;
-  padding: 0.7vw 0.9vw;
+  padding: 4%;
   border-radius: 8px;
   background-color: var(--background-container);
   color: var(--theme);
-  font-size: 75%;
+  font-size: 0.7vw;
   font-weight: 600;
   margin: 1% 0%;
 }
@@ -283,9 +290,12 @@ a:link {
 #contact {
   background-image: url(img/final.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
-  padding-top: 12%;
+  height: 35vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 #contact-div {
@@ -321,10 +331,6 @@ a:link {
   flex-wrap: wrap;
 }
 
-#survey-form-mobile {
-  display: none;
-}
-
 .form {
   background: var(--background-container);
   border: 1px solid var(--background-items);
@@ -336,7 +342,7 @@ a:link {
 }
 
 .name {
-  width: 45%;
+  width: 100%;
   margin: 0 2.5% 0.5vw 2.5%;
 }
 
@@ -348,12 +354,12 @@ a:link {
 #comments {
   width: 95%;
   height: 8vw;
-  margin: 1vw 2.5%;
+  margin: 0.5vw 2.5%;
 }
 
 #submit-button {
   justify-content: left;
-  margin-left: 2.5%;
+  margin: 1vw 2.5%;
 }
 
 textarea::placeholder {
@@ -368,9 +374,24 @@ textarea::placeholder {
   display: none;
 }
 
+.grid-title {
+  font-size: 1vw;
+}
+
 @media (max-width: 768px) {
   #main {
-    width: 85%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(img/mobile-background.png);
+    background-position-y: 15vw;
+    height: 100vh;
+  }
+
+  #intro {
+    width: 90%;
+    padding-top: 8vh;
+    padding-bottom: 11vh;
   }
 
   #name {
@@ -382,16 +403,9 @@ textarea::placeholder {
   }
 
   #description {
-    font-size: 6vw;
+    font-size: 5.6vw;
     font-weight: 400;
     line-height: 8vw;
-  }
-
-  body {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url(img/mobile-background.png);
-    background-position: 0 20vw;
   }
 
   #menu {
@@ -447,6 +461,7 @@ textarea::placeholder {
     font-size: 10vw;
     padding: 5vw;
     margin-bottom: 2vw;
+    margin-top: 0;
   }
 
   #works {
@@ -467,6 +482,11 @@ textarea::placeholder {
   .grid-work {
     display: flex;
     padding: 0;
+  }
+
+  .grid-title {
+    font-size: 4vw;
+    height: 50%;
   }
 
   .grid-item {
@@ -501,10 +521,10 @@ textarea::placeholder {
 
   .lang-item {
     text-align: center;
-    padding: 2vw 3vw 2vw 3vw;
+    padding: 3vw;
     border-radius: 8px;
     background-color: var(--background-items);
-    font-size: 75%;
+    font-size: 3vw;
     font-weight: 500;
   }
 
@@ -528,8 +548,14 @@ textarea::placeholder {
     font-size: 10vw;
   }
 
+  #about-lang-list {
+    justify-content: center;
+  }
+
   .about-me {
-    padding: 5vw 5vw;
+    padding: 0 5vw;
+    margin: 25vw 0;
+    background-image: url(img/about-me-background-mobile.png);
   }
 
   #about-text {
@@ -551,27 +577,27 @@ textarea::placeholder {
     height: 100%;
     width: 100%;
     margin: 0;
+    justify-content: center;
   }
 
   .about-icon {
     width: 30%;
   }
 
-  .about-icon-div {
-    margin-top: 10%;
-  }
-
-  .grid-title {
-    height: 50%;
-  }
-
   .about-lang-item {
     padding: 2.7vw 2.9vw;
+    font-size: 3vw;
+    margin: 1vw;
+  }
+
+  .about-grid-item-title {
+    font-size: 8vw;
+    margin: 2vw 0;
   }
 
   #contact-center {
     flex-wrap: wrap;
-    height: 195vw;
+    height: 170vw;
   }
 
   #contact-div {
@@ -580,14 +606,15 @@ textarea::placeholder {
   }
 
   #invite {
-    font-size: 8vw;
+    font-size: 12vw;
     text-align: center;
-    line-height: 11vw;
-    width: 80%;
+    line-height: 15vw;
+    width: 79%;
   }
 
   #about {
     margin: 0 0 20vh 0;
+    padding-top: 0.5vw;
   }
 
   #contact {
@@ -595,6 +622,8 @@ textarea::placeholder {
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom right;
+    height: 240vw;
+    align-items: normal;
   }
 
   #about-me {
@@ -617,10 +646,6 @@ textarea::placeholder {
   }
 
   #survey-form {
-    display: none;
-  }
-
-  #survey-form-mobile {
     padding: 1vw 0 1vw 1vw;
     justify-content: center;
     display: flex;
@@ -633,13 +658,17 @@ textarea::placeholder {
 
   #submit-button {
     justify-content: center;
+    margin: 5vw 2.5%;
   }
 
   #email-para {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
     font-size: 5vw;
+  }
+
+  footer {
+    padding-top: 5vw;
   }
 
   #icons-footer {
