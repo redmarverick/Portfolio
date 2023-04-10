@@ -97,6 +97,10 @@ You can deploy this project using visual code or github itself on Settings > pag
 - Twitter: [@GabrielRozas12](https://twitter.com/GabrielRozas12)
 - LinkedIn: [grozas](https://www.linkedin.com/in/grozas/)
 
+👤 **Benjamin**
+
+- GitHub: [@githubhandle](https://github.com/BenjaminMatembe)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
