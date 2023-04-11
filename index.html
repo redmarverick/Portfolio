@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
+      <nav id="nav" class="nav">
         <div id="ham-menu">
           <button type="button" id="ham-but" type="button" class="hamburger">
             <span class="ham-top"></span>
@@ -18,9 +18,9 @@
           </button>
         </div>
         <ul id="menu">
-          <il><a href="#w-title">Portfolio</a></il>
-          <il><a href="#about">About</a></il>
-          <il><a href="#contact">Contact</a></il>
+          <il class="menuItem"><a href="#w-title" onclick="toggleMenu()">Portfolio</a></il>
+          <il class="menuItem"><a href="#about" onclick="toggleMenu()">About</a></il>
+          <il class="menuItem"><a href="#contact" onclick="toggleMenu()">Contact</a></il>
         </ul>
       </div>
     </header>
@@ -216,5 +216,6 @@
         <il class="il-icons"><a class="icons" href="#"><img alt="Medium" src="img/Icon - medium.png"></a></il>
       </ul>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
