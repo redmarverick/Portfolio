@@ -250,7 +250,7 @@ a:link {
   justify-content: space-between;
   justify-items: center;
   height: 5vh;
-  padding: 0px 4%;
+  padding: 0 4%;
   margin-left: 1vw;
   border-radius: 8px;
   flex-direction: row;
@@ -258,7 +258,7 @@ a:link {
 
 #popup-live-link {
   font-size: 100%;
-  padding: 0px 4%;
+  padding: 0 4%;
 }
 
 #popup-source-link {
@@ -274,7 +274,6 @@ a:link {
   background-color: var(--contPop);
   padding: 2em 20px;
   border-radius: 16px;
-  overflow: overlay;
   justify-content: space-between;
   margin: 4vh 0;
   height: max-content;
@@ -287,7 +286,7 @@ a:link {
   background-color: var(--bgPop);
   border: none;
   border-radius: 8px;
-  padding: 0.25em 0px;
+  padding: 0.25em 0;
 }
 
 .popup-image {
@@ -340,7 +339,7 @@ a:link {
 }
 
 #popup-technologies {
-  justify-content:left;
+  justify-content: left;
   order: 4;
   width: 100%;
 }
@@ -355,16 +354,11 @@ a:link {
 }
 
 #popupspace {
-  
-height: 85vh;
-  
-width: 100%;
-  
-margin-top: 81vh;
-  
-display: block;
-  
-margin-bottom: 10vh;
+  height: 85vh;
+  width: 100%;
+  margin-top: 81vh;
+  display: block;
+  margin-bottom: 10vh;
 }
 
 .about-me {
@@ -885,67 +879,66 @@ textarea::placeholder {
   }
 
   /* popup area */
-  
+
   #popup-but-cont {
     justify-content: space-between;
     height: 100%;
     margin: 0;
   }
-  
+
   .popup-button {
     height: 7vh;
     padding: 0 5vw;
   }
-  
+
   #popup-live-link {
     height: 6vh;
     width: 40%;
     font-size: 4vw;
     margin: 0;
   }
-  
+
   #popup-source-link {
     height: 6vh;
     width: 54%;
     font-size: 4vw;
   }
-  
+
   .popup-content {
     flex-direction: column;
     width: 80vw;
     padding: 20px;
-    height: fit-content;
   }
-  
+
   #popup-close {
     margin: 5%;
     width: 8%;
     height: 10%;
     background-color: transparent;
   }
-  
-  .popup-image {    
+
+  .popup-image {
     order: 1;
   }
-  
+
   .popup-title {
     margin: 2% 0;
     font-size: 8.5vw;
     order: 2;
   }
-  
+
   .popup-description {
     font-size: 4vw;
     order: 4;
   }
-  
+
   .popup-links {
     justify-content: center;
     order: 5;
     width: 100%;
     height: 7vh;
   }
-  
+
   #popup-technologies {
     margin: 1vw 0 1vw 0;
     order: 3;
