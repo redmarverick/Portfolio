@@ -6,6 +6,9 @@
     --button-hover: rgba(54, 179, 127, 0.24);
     --button-press: #008552;
     --title: #172b4d;
+    --bgPop: rgb(193, 199, 208);
+    --bgPopT: rgba(193, 199, 208, 0.7);
+    --contPop: #fff;
   }
 }
 
@@ -17,6 +20,9 @@
     --button-hover: rgba(54, 179, 127, 0.24);
     --button-press: #008552;
     --title: #fafafa;
+    --contPop: rgb(85, 85, 85);
+    --bgPopT: rgba(85, 85, 85, 0.7);
+    --bgPop: #222;
   }
 }
 
@@ -211,6 +217,148 @@ a:link {
 
 .grid-button:active {
   background-color: var(--button-press);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgPopT);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+}
+
+.popup-active {
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+}
+
+#popup-but-cont {
+  width: 100%;
+  justify-content: end;
+  height: 6vw;
+}
+
+.popup-button {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  justify-items: center;
+  height: 5vh;
+  padding: 0 4%;
+  margin-left: 1vw;
+  border-radius: 8px;
+  flex-direction: row;
+}
+
+#popup-live-link {
+  font-size: 100%;
+  padding: 0 4%;
+}
+
+#popup-source-link {
+  font-size: 100%;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 100%;
+  background-color: var(--contPop);
+  padding: 2em 20px;
+  border-radius: 16px;
+  justify-content: space-between;
+  margin: 4vh 0;
+  height: max-content;
+}
+
+#popup-close {
+  margin: -3.5em 0;
+  width: 3em;
+  height: 3em;
+  background-color: var(--bgPop);
+  border: none;
+  border-radius: 8px;
+  padding: 0.25em 0;
+}
+
+.popup-image {
+  width: 80vw;
+  height: 57vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  margin-top: 1.5em;
+  border-radius: 8px;
+  order: 1;
+}
+
+.popup-title {
+  text-align: left;
+  margin: 0;
+  font-size: 3vw;
+  order: 2;
+  font-weight: 700;
+}
+
+.popup-description {
+  text-align: left;
+  line-height: 140%;
+  font-size: 100%;
+  order: 5;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.popup-button svg {
+  margin-left: 1vh;
+}
+
+.popup-links {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  order: 3;
+  width: 40%;
+  margin: 0.1em 0;
+}
+
+#popup-technologies {
+  justify-content: left;
+  order: 4;
+  width: 100%;
+}
+
+.dt-pop-langitem {
+  padding: 1.2vh 0.7vw 0.2vw;
+  background-color: var(--bgPop);
+  color: var(--title);
+  height: 2.5vh;
+  margin: 0 0.4vw;
+  font-size: 80%;
+}
+
+#popupspace {
+  height: 85vh;
+  width: 100%;
+  margin-top: 81vh;
+  display: block;
+  margin-bottom: 10vh;
 }
 
 .about-me {
@@ -565,7 +713,6 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 3vw 0 6vw 0;
   }
 
   .lang-item {
@@ -605,6 +752,7 @@ textarea::placeholder {
     padding: 0 5vw;
     margin: 25vw 0;
     background-image: url(img/about-me-background-mobile.png);
+    background-size: cover;
   }
 
   #about-text {
@@ -728,5 +876,75 @@ textarea::placeholder {
   .icons img {
     padding: 2vw;
     width: 7.5vw;
+  }
+
+  /* popup area */
+
+  #popup-but-cont {
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+  }
+
+  .popup-button {
+    height: 7vh;
+    padding: 0 5vw;
+  }
+
+  #popup-live-link {
+    height: 6vh;
+    width: 40%;
+    font-size: 4vw;
+    margin: 0;
+  }
+
+  #popup-source-link {
+    height: 6vh;
+    width: 54%;
+    font-size: 4vw;
+  }
+
+  .popup-content {
+    flex-direction: column;
+    width: 80vw;
+    padding: 20px;
+  }
+
+  #popup-close {
+    margin: 5%;
+    width: 8%;
+    height: 10%;
+    background-color: transparent;
+  }
+
+  .popup-image {
+    order: 1;
+  }
+
+  .popup-title {
+    margin: 2% 0;
+    font-size: 8.5vw;
+    order: 2;
+  }
+
+  .popup-description {
+    font-size: 4vw;
+    order: 4;
+  }
+
+  .popup-links {
+    justify-content: center;
+    order: 5;
+    width: 100%;
+    height: 7vh;
+  }
+
+  #popup-technologies {
+    margin: 1vw 0 1vw 0;
+    order: 3;
+  }
+
+  .dt-pop-langitem {
+    background-color: var(--bgPop);
   }
 }

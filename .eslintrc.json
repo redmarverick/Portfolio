@@ -14,6 +14,12 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
+    "no-plusplus": "off",
+    "no-use-before-define": "off",
+    "no-inner-declarations": "off",
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "func-names": "off",
     "import/extensions": [ 1, {
       "js": "always", "json": "always"
     }]
