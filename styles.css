@@ -6,6 +6,8 @@
     --button-hover: rgba(54, 179, 127, 0.24);
     --button-press: #008552;
     --title: #172b4d;
+    --bgPop: #C1C7D0;
+    --contPop: #fff;
   }
 }
 
@@ -17,6 +19,8 @@
     --button-hover: rgba(54, 179, 127, 0.24);
     --button-press: #008552;
     --title: #fafafa;
+    --contPop: #555;
+    --bgPop: #222;
   }
 }
 
@@ -211,6 +215,158 @@ a:link {
 
 .grid-button:active {
   background-color: var(--button-press);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgPop);
+  z-index: 9999;
+}
+
+.popup-active {
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+}
+
+#popup-but-cont {
+  width: 100%;
+  justify-content: end;
+  height: 6vw;
+}
+
+.popup-button {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  justify-items: center;
+  height: 5vh;
+  padding: 0px 4%;
+  margin-left: 1vw;
+  border-radius: 8px;
+  flex-direction: row;
+}
+
+#popup-live-link {
+  /* height: 40%; */
+  /* width: 35%; */
+  font-size: 100%;
+  padding: 0px 4%;
+}
+
+#popup-source-link {
+  /* height: 40%; */
+  /* width: 40%; */
+  font-size: 100%;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 100%;
+  background-color: var(--contPop);
+  padding: 2em 20px;
+  border-radius: 16px;
+  overflow: overlay;
+  justify-content: space-between;
+  margin: 4vh 0;
+  height: max-content;
+}
+
+#popup-close {
+  margin: -3.5em 0;
+  width: 3em;
+  height: 3em;
+  background-color: var(--bgPop);
+  border: none;
+  border-radius: 8px;
+  padding: 0.25em 0px;
+}
+
+.popup-image {
+  /*background-image: url(img/portfolioDesktop1.png);*/
+  width: 80vw;
+  height: 57vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  margin-top: 1.5em;
+  border-radius: 8px;
+  order: 1;
+}
+
+.popup-title {
+  text-align: left;
+  margin: 0;
+  font-size: 3vw;
+  order: 2;
+  font-weight: 700;
+}
+
+.popup-description {
+  text-align: left;
+  line-height: 140%;
+  font-size: 100%;
+  order: 5;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.popup-button svg {
+  margin-left: 1vh;
+}
+
+.popup-links {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  order: 3;
+  width: 40%;
+  margin: 0.1em 0;
+}
+
+#popup-technologies {
+  justify-content:left;
+  order: 4;
+  width: 100%;
+}
+
+.dt-pop-langitem {
+  padding: 1.2vh 0.7vw 0.2vw;
+  background-color: var(--bgPop);
+  color: var(--title);
+  height: 2.5vh;
+  margin: 0 0.4vw;
+  font-size: 80%;
+}
+
+#popupspace {
+  
+height: 85vh;
+  
+width: 100%;
+  
+margin-top: 81vh;
+  
+display: block;
+  
+margin-bottom: 10vh;
 }
 
 .about-me {
@@ -565,7 +721,6 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 3vw 0 6vw 0;
   }
 
   .lang-item {
@@ -605,6 +760,7 @@ textarea::placeholder {
     padding: 0 5vw;
     margin: 25vw 0;
     background-image: url(img/about-me-background-mobile.png);
+    background-size: cover;
   }
 
   #about-text {
@@ -728,5 +884,127 @@ textarea::placeholder {
   .icons img {
     padding: 2vw;
     width: 7.5vw;
+  }
+
+  /* popup area */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgPop);
+    z-index: 9999;
+  }
+  
+  .popup-active {
+    display: flex;
+    overflow: auto;
+  }
+  
+  #popup-but-cont {
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .popup-button {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    justify-items: center;
+    height: 7vh;
+    padding: 0 5vw;
+  }
+  
+  #popup-live-link {
+    height: 6vh;
+    width: 40%;
+    font-size: 4vw;
+    margin: 0;
+  }
+  
+  #popup-source-link {
+    height: 6vh;
+    width: 54%;
+    font-size: 4vw;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80vw;
+    max-width: 100%;
+    left: 5vw;
+    top: 3vh;
+    background-color: var(--contPop);
+    padding: 20px;
+    border-radius: 16px;
+    overflow: overlay;
+  }
+  
+  #popup-close {
+    margin: 5%;
+    width: 8%;
+    height: 10%;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .popup-image {    
+    /*background-image: url(img/portfolioMobile1.png);*/
+    width: 80vw;
+    height: 57vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    order: 1;
+  }
+  
+  .popup-title {
+    text-align: left;
+    margin: 2% 0;
+    font-size: 8.5vw;
+    order: 2;
+  }
+  
+  .popup-description {
+    text-align: left;
+    line-height: 140%;
+    font-size: 4vw;
+    order: 4;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .popup-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    order: 5;
+    width: 100%;
+    height: 7vh;
+  }
+  
+  #popup-technologies {
+    justify-content:left;
+    margin: 1vw 0 1vw 0;
+    order: 3;
+  }
+
+  .dt-pop-langitem {
+    background-color: var(--bgPop);
   }
 }
