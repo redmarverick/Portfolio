@@ -358,3 +358,28 @@ document.getElementById('survey-form').addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+const surveyForm = document.getElementById('myForm');
+document.getElementById('survey-form').addEventListener('input', (event) => {
+  // Get the input values
+  const name = document.getElementById('full-name').value;
+  const email = document.getElementById('email').value;
+  const comments = document.getElementById('comments').value;
+
+  // Store the input values in localStorage
+  localStorage.setItem('full-name', name);
+  localStorage.setItem('email', email);
+  localStorage.setItem('comments', comments);
+});
+
+// Retrieve the stored data on page load
+window.addEventListener('load', () => {
+  const name = localStorage.getItem('full-name');
+  const email = localStorage.getItem('email');
+  const comments = localStorage.getItem('comments');
+
+  // Populate the form with the stored data
+  document.getElementById('full-name').value = name;
+  document.getElementById('email').value = email;
+  document.getElementById('comments').value = comments;
+});
