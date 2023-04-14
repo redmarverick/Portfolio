@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // message of error creation
-function createError(){
+function createError() {
   const emailInputElement = document.getElementById('email');
   const divErrorFather = document.createElement('div');
   divErrorFather.setAttribute('id', 'error-message');
@@ -336,32 +336,25 @@ function createError(){
   emailInputElement.after(divErrorFather);
 }
 
-//check letters in real time
+// check letters in real time
 document.getElementById('email').addEventListener('input', (event) => {
   const emailInput = document.getElementById('email').value;
   const emailError = document.getElementById('email-error');
   const surveyForm = document.getElementById('survey-form');
-  if (emailInput!=emailInput.toLowerCase()) {
-    if(surveyForm.contains(emailError)==false){
+  if (emailInput !== emailInput.toLowerCase()) {
+    if (surveyForm.contains(emailError) === false) {
       createError();
-      };
-  } 
-  else {
-    if(document.body.contains(emailError)==true){
-      emailError.remove();
     }
+  } else if (document.body.contains(emailError) === true) {
+    emailError.remove();
   }
 });
 
-//prevent submit
+// prevent submit
 document.getElementById('survey-form').addEventListener('submit', (event) => {
   const surveyForm = document.getElementById('survey-form');
   const emailInput = document.getElementById('email').value;
-  if(emailInput!=emailInput.toLowerCase()){
+  if (emailInput !== emailInput.toLowerCase()) {
     event.preventDefault();
-  }
-  else
-  {
-    console.log('your log was sent, why are you looking at the console?');
   }
 });
