@@ -321,3 +321,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// message of error creation
+function createError() {
+  const emailInputElement = document.getElementById('email');
+  const divErrorFather = document.createElement('div');
+  divErrorFather.setAttribute('id', 'error-message');
+  const errorMessage = document.createElement('div');
+  errorMessage.setAttribute('id', 'email-error');
+  errorMessage.setAttribute('class', 'error-balloon');
+  const newText = document.createTextNode('Your email should have only lowercase letters');
+  errorMessage.appendChild(newText);
+  divErrorFather.appendChild(errorMessage);
+  emailInputElement.after(divErrorFather);
+}
+
+// check letters in real time
+document.getElementById('email').addEventListener('input', (event) => {
+  const emailInput = document.getElementById('email').value;
+  const emailError = document.getElementById('email-error');
+  const surveyForm = document.getElementById('survey-form');
+  if (emailInput !== emailInput.toLowerCase()) {
+    if (surveyForm.contains(emailError) === false) {
+      createError();
+    }
+  } else if (document.body.contains(emailError) === true) {
+    emailError.remove();
+  }
+});
+
+// prevent submit
+document.getElementById('survey-form').addEventListener('submit', (event) => {
+  const surveyForm = document.getElementById('survey-form');
+  const emailInput = document.getElementById('email').value;
+  if (emailInput !== emailInput.toLowerCase()) {
+    event.preventDefault();
+  }
+});

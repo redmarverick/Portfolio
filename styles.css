@@ -41,6 +41,39 @@ body {
   padding: 0;
 }
 
+.error-balloon {
+  position: absolute;
+  padding: 8px;
+  background-color: #f8d7da;
+  color: #721c24;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+#error-message {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 2.5%;
+}
+
+.error-balloon::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  margin-top: -6px;
+  border: 6px solid transparent;
+  border-top-color: #f8d7da;
+  transition: opacity 0.3s ease;
+}
+
+.error-balloon.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 header {
   width: 100%;
   display: flex;
